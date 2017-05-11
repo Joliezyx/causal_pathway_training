@@ -8,7 +8,7 @@ season = 1;
 count_region = zeros(K,N,3);
 optimal_neighbor_numbers = cell(1,3);
 for p = 1:1
-    for city = 1:3%size(CityInfo,1)
+    for city = 1:3%size(CityInfo,1) % city 1: Beijing, city 2: Shanghai, city 3: Shenzhen
         accuracy_city = NaN(K,N,iter_num);
         fprintf('City %d', city);
         for ave_iter = 1:iter_num
