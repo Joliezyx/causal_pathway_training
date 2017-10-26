@@ -32,7 +32,7 @@ Major functions:
 Some major results:
 
 1.	Optimal accuracy for 128 cities respected to K (# of clusters), and N (# of neighbor cities that may influence the target city).
- 
-2.	By choosing the optimal K and N for each city, we draw and concatenate the causal pathways for Beijing PM2.5: Which shows the pollutants are more likely to come from the south-west and north-east. Btw, the cliques in the causal pathways correspond to the locations of major plants in North China. 
-   
+(See Fig.15 in paper)
+2.	By choosing the optimal K and N for each city, we draw and concatenate the causal pathways for Beijing PM2.5: Which shows the pollutants are more likely to come from the south and north-east. Btw, the cliques in the causal pathways correspond to the locations of major plants in North China. 
+(See Fig.14(a)(b) in paper)
 
