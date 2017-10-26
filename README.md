@@ -1,6 +1,4 @@
 # causal_pathway_training
-Identify the causality for air pollution in China (North China, Yangtze River Delta, and Pearl River Delta)
-Corresponding to paper https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/pg-Causality-yuzheng.pdf.
 Causal pathway training is the core part for learning the pg-Causality model from paper https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/pg-Causality-yuzheng.pdf. 
 
 
