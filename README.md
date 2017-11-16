@@ -7,7 +7,7 @@ pg-Causality is an efficient pattern-aided Bayesian-based causal structure learn
 How to Run:
 1.	Unzip bnt.zip (Matlab Bayesian toolbox) to the main directory.
 2.	Download .mat files as large files from github (not directly download from the webpage).
-3.	Run zhc_Main.m for training the structure and the parameters of the causality model for air pollution.
+3.	Run Main.m for training the structure and the parameters of the causality model for air pollution.
 4.	Result (statistics causal inference: absolute error, accuracy, as well as the intermediate structure infos) will be put into the folder ./Result/
 5.	Run accuracy_statistics_all.m to get the final statistics of the inference accuracy regarding to all the cities.
 
@@ -21,7 +21,7 @@ Data description:
 7.	ind_season_new.mat: indices for temporally separating datasets 1) in each season, 2) as training datasets or testing datasets.
 
 Major functions:
-1.	zhc_Main.m: Main function
+1.	Main.m: Main function
 2.	GC_Score.m: Get the Granger causality score for two air pollutants at two different locations.
 3.	Make_Q_Data.m: Generate the features for the training causal network, based on selected candidate cities.
 4.	Train_Network.m: Train the Gaussian Bayesian network.
