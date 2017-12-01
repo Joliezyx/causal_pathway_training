@@ -4,14 +4,14 @@ Causal pathway training is the core part for learning the pg-Causality model fro
 
 pg-Causality is an efficient pattern-aided Bayesian-based causal structure learning approach for identifying the causalities among different air pollutants in the spatio-temporal space. The published codes identified the causality for air pollution in China (North China, Yangtze River Delta, and Pearl River Delta) 
 
-How to Run:
+### How to Run:
 1.	Unzip bnt.zip (Matlab Bayesian toolbox) to the main directory.
 2.	Download .mat files as large files from github (not directly download from the webpage).
 3.	Run Main.m for training the structure and the parameters of the causality model for air pollution.
 4.	Result (statistics causal inference: absolute error, accuracy, as well as the intermediate structure infos) will be put into the folder ./Result/
 5.	Run accuracy_statistics_all.m to get the final statistics of the inference accuracy regarding to all the cities.
 
-Data description:
+### Data description:
 1.	City_Level_UD_Interp_New.mat: Hourly air quality data (PM2.5, PM10, NO2, CO, O3, SO2) from 128 cities. Time range: 06/01/2013 - 12/31/2016. 
 2.	City_Level_Weather_Training.mat: Hourly weather factor features for 128 cities. Regarding each city, the features are calculated from five basic meteorological information, i.e. temperature (T), pressure (P), humidity (U), wind speed (WS), and wind direction (WD), uniformly divided into 9 grids in the whole region. Therefore the features for each city are 45-dimensional by default. The dimension could be less than 45 if there’s no weather data contained in a grid.
 3.	CityInfo.mat: GPS info for 128 cities
@@ -20,7 +20,7 @@ Data description:
 6.	ST_candidates_v2_new.mat: spatial candidates generated without pattern mining module (with only Granger causality)
 7.	ind_season_new.mat: indices for temporally separating datasets 1) in each season, 2) as training datasets or testing datasets.
 
-Major functions:
+### Major functions:
 1.	Main.m: Main function
 2.	GC_Score.m: Get the Granger causality score for two air pollutants at two different locations.
 3.	Make_Q_Data.m: Generate the features for the training causal network, based on selected candidate cities.
@@ -29,10 +29,12 @@ Major functions:
 6.	accuracy_statistics_all.m: Accuracy calculation for 128 cities.
 
 
-Some major results:
+### Some major results:
 
 1.	Optimal accuracy for 128 cities respected to K (# of clusters), and N (# of neighbor cities that may influence the target city).
 (See Fig.15 in paper)
 2.	By choosing the optimal K and N for each city, we draw and concatenate the causal pathways for Beijing PM2.5: Which shows the pollutants are more likely to come from the south and north-east. Btw, the cliques in the causal pathways correspond to the locations of major plants in North China. 
 (See Fig.14(a)(b) in paper)
 
+### .mat file Download
+When LFS doesn't work, you can alternatively download the data files at https://www.dropbox.com/sh/58br7t43h6y0sw7/AABWMWkNegHk4JxABFNqhRRGa?dl=0
